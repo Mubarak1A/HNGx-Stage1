@@ -8,10 +8,6 @@ import datetime
 
 app = Flask(__name__)
 
-@app.route('/')
-def greet():
-    return "Hello World!"
-
 @app.route('/profile', methods=['GET'])
 def profile_json():
     """ Module Method that Create and host the endpoint;
