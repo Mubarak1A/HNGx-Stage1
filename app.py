@@ -29,9 +29,9 @@ def profile_json():
     current_time = datetime.datetime.utcnow()
     utc_time_str = current_time.strftime('%Y-%m-%dT%H:%M:%SZ')
 
-    # Get GitHub file URL and repository URL
-    github_file_url = request.args.get('github_file_url')
-    github_repo_url = request.args.get('github_repo_url')
+    # Include GitHub file URL and repository URL
+    github_file_url = "https://github.com/Mubarak1A/HNGx-Stage1/app.py"
+    github_repo_url = "https://github.com/Mubarak1A/HNGx-Stage1"
 
     # Validate the UTC time within +/-2 minutes
     utc_time_validation = datetime.timedelta(minutes=2)
