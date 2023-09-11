@@ -8,7 +8,7 @@ import datetime
 
 app = Flask(__name__)
 
-@app.route('/profile', methods=['GET'])
+@app.route('/api', methods=['GET'])
 def profile_json():
     """ Module Method that Create and host the endpoint;
         take two GET request query parameters
